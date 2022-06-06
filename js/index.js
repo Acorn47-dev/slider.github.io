@@ -23,9 +23,11 @@ const showmore = () => {
         )
         var modal_open = document.getElementById("modal-open");
         modal_open.addEventListener("click", function () {
-            alert("click");
+            const modalOpen = document.querySelector('.modal-open');
+            modalOpen.addEventListener('click', () => {new GraphModal().open('one');});
         })
-        
+        const modalOpen = document.querySelector('.modal-open');
+		modalOpen.addEventListener('click', () => {new GraphModal().open('one');});
     }
 
 }
