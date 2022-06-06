@@ -1,0 +1,145 @@
+body{
+	background-color: #fafafa;
+}
+.card-slider{
+	height: 490px;
+	width: 592px;
+	display: flex;
+	margin-right: 60px;
+}
+.card{
+	display: flex;
+	flex-direction: row;
+}
+.card-info{
+	width: calc(100% - 592px - 60px);
+	padding-right: 62px;
+}
+.slider-nav{
+	width: 82px;
+	margin-right: 20px;
+}
+.slider-nav__item{
+	height: 82px;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #d9d9d9;
+	box-sizing: border-box;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.slider-nav__item:not(:last-child){
+	margin-bottom: 20px;
+}
+.slider-nav__item img{
+	display: block;
+	width: 80%;
+	height: 80%;
+	object-fit:cover ;
+}
+.slider-block{
+	width: calc(100% - 82px - 20px);
+	overflow: hidden;
+}
+.swiper-slide{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border: 1px solid #d9d9d9;
+	box-sizing: border-box;
+	border-radius: 4px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+.vendor{
+	display: inline-block;
+	font-weight: 400;
+	font-style: 14px;
+	line-height: 19px;
+	color: #808080;
+	margin-bottom: 40px;
+}
+.title{
+	font-weight: 400;
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 24px;
+	line-height: 35px;
+	color:#4d4d4d;
+}
+.testimonials{
+	display: flex;
+	align-items: center;
+}
+.testimonials__link{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 19px;
+	color: #5d71d0;
+	border-bottom: 1px solid #5d71d0;
+}
+.rating{
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+}
+.rating img:not(:last-child){
+	margin-right: 4px;
+}
+.available{
+	display: inline-block;
+	font-weight: 400;
+	font-style: 14px;
+	line-height: 19px;
+	color: #808080;
+	margin-bottom: 40px;
+}
+.price{
+	display: flex;
+	align-items: flex-end;
+}
+.price__current{
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	color:#4d4d4d;
+	margin-right: 40px;
+}
+.price__old{
+	font-size: 18px;
+	line-height: 25px;
+	color:#808080;
+	text-decoration: line-through;
+	transform: translate(0px, -5px);
+}
+.buy{
+	background-color: #5d71d0;
+	width: 100%;
+	height: 45px;
+	color:white;
+	text-align: center;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.modal-open{
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 19px;
+	color: #5d71d0;
+	border-bottom: 1px solid #5d71d0;
+}
